@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es" class="js not-logged-in "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Instagram Developer Documentation</title>
+
+
+        <meta name="robots" content="noimageindex, noarchive">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#000000">
+        <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
+
+        <link rel="manifest" href="https://www.instagram.com/data/manifest.json">
+
+
+
+
+
+
+        <script async="" src="file://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript">
+        (function() {
+            var docElement = document.documentElement;
+            var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+            var className = docElement.className;
+            docElement.className = className.replace(classRE, '$1js$2');
+        })();
+        </script>
+        <script type="text/javascript">
+        (function() {
+          if ('PerformanceObserver' in window && 'PerformancePaintTiming' in window) {
+            window.__bufferedPerformance = [];
+            var ob = new PerformanceObserver(function(e) {
+              window.__bufferedPerformance.push.apply(window.__bufferedPerformance,e.getEntries());
+            });
+            ob.observe({entryTypes:['paint']});
+          }
+        })();
+        </script>
+                <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.instagram.com/static/images/ico/apple-touch-icon-76x76-precomposed.png/932e4d9af891.png">
+                <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.instagram.com/static/images/ico/apple-touch-icon-120x120-precomposed.png/004705c9353f.png">
+                <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.instagram.com/static/images/ico/apple-touch-icon-152x152-precomposed.png/82467bc9bcce.png">
+                <link rel="apple-touch-icon-precomposed" sizes="167x167" href="https://www.instagram.com/static/images/ico/apple-touch-icon-167x167-precomposed.png/515cb4eeeeee.png">
+                <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://www.instagram.com/static/images/ico/apple-touch-icon-180x180-precomposed.png/94fd767f257b.png">
+
+                    <link rel="icon" sizes="192x192" href="https://www.instagram.com/static/images/ico/favicon-192.png/b407fa101800.png">
+
+
+
+                    <link rel="mask-icon" href="https://www.instagram.com/static/images/ico/favicon.svg/9d8680ab8a3c.svg" color="#262626">
+
+                  <link rel="shortcut icon" type="image/x-icon" href="https://www.instagram.com/static/images/ico/favicon.ico/dfa85bb1fd63.ico">
+
+
+
+    <link rel="stylesheet" type="text/css" href="./index_files/5af98987fe3b.css">
+
+
+
+
+    <script type="text/javascript" src="./index_files/213ba890e802.js.descarga" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./index_files/57733d51aed5.js.descarga" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./index_files/a98ac49433f4.js.descarga" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+    $('#top_bar_right .top-bar-actions').prepend("<li class='manage-clients link-settings'><a class='' href='/developer/clients/manage/'>Manage Clients<i></i></a></li>");
+    $('#top_bar_right .top-bar-actions').prepend("<li class='testing-clients link-settings'><a class='' href='/developer/clients/sandbox_invites/'>Sandbox Invites<i></i></a></li>");
+  });
+</script>
+</head>
+    <body class="sidebar-page">
+
+            <div class="root -cx-PRIVATE-Page__root">
+
+                    <div class="page -cx-PRIVATE-Page__body">
+
+
+                                 <!-- .top-bar -->
+
+
+
+
+    <div class="main -cx-PRIVATE-Page__main">
+        <div class="sidebar -cx-PRIVATE-SidebarLayout__root">
+            <div class="wrapper -cx-PRIVATE-SidebarLayout__navWrapper">
+                <nav class="sidebar-nav -cx-PRIVATE-SidebarLayout__nav">
+                    <div class="sidebar-content -cx-PRIVATE-SidebarLayout__content">
+
+
+
+<form class="quick-search" action="https://www.instagram.com/developer/search/" method="GET">
+    <a href="https://www.instagram.com/developer/#" class="disclosure-down"></a>
+    <input name="q" type="text" placeholder="Search Documentation">
+    <input type="submit">
+</form>
+
+<ul>
+    <li class="active -cx-PRIVATE-Navigation__active">
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/">
+
+            Overview
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/authentication/">
+
+            Authentication
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/authorization/">
+
+            Login Permissions
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/review/">
+
+            Permissions Review
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/sandbox/">
+
+            Sandbox Mode
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/secure-api-requests/">
+
+            Secure Requests
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/endpoints/">
+
+            Endpoints
+
+            <i class="disclosure"></i>
+
+        </a>
+
+
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/subscriptions/">
+
+            Subscriptions
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/embedding/">
+
+            Embedding
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/mobile-sharing/">
+
+            Mobile Sharing
+
+            <i class="disclosure"></i>
+
+        </a>
+
+
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/libraries/">
+
+            Libraries
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/support/">
+
+            Support
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/developer/changelog/">
+
+            Changelog
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a class="-cx-PRIVATE-Navigation__navLink" href="https://www.instagram.com/about/legal/terms/api/">
+
+            Platform Policy
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+</ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper -cx-PRIVATE-SidebarLayout__contentWrapper">
+            <section class="nav-page-content -cx-PRIVATE-SidebarLayout__pageContent" role="main">
+
+
+
+
+
+
+
+    <p class="instagram-graph-api-platform">
+
+        <a href="https://developers.facebook.com/blog/post/2018/01/30/instagram-graph-api-updates/">
+          The Instagram API Platform will be deprecated beginning in July 2018. For full details please see <span class="strong">developer blog link</span>
+        </a>
+        <br>
+        <a href="https://developers.facebook.com/products/instagram/">
+          For applications that support Instagram business profiles, learn more about our <span class="strong">Instagram Graph API</span>
+        </a>
+
+    </p>
+
+
+    <div class="introduction-wrapper-tall">
+
+        <div class="introduction">
+            <h1>Hello Developers.</h1>
+
+            <p>
+                The Instagram API Platform can be used to build non-automated, authentic, high-quality apps and services that:
+                </p><ul>
+                    <li>
+                        Help <b>individuals share their own content</b> with 3rd party apps.
+                    </li>
+                    <li>
+                        Help <b>brands and advertisers</b> understand, manage their audience and media rights.
+                    </li>
+                    <li>
+                        Help <b>broadcasters and publishers</b> discover content, get digital rights to media, and share media with proper attribution.
+                    </li>
+                </ul>
+            <p></p>
+
+            <div class="cta">
+                <a class="button" href="https://www.instagram.com/developer/clients/manage/">Register Your Application</a>
+                <span class="after-register">then <a href="https://www.instagram.com/developer/authentication/">dive into the documentation</a></span>
+            </div>
+        </div>
+    </div>
+
+    <section id="getting_started" class="three-step">
+        <h2>Getting Started</h2>
+
+        <ol>
+             <li class="step-1">
+                 <h3><a href="https://www.instagram.com/developer/clients/manage/">Register</a></h3>
+                 <p>We'll assign an OAuth client_id and client_secret for each of your applications.</p>
+             </li>
+             <li class="step-2">
+                 <h3><a href="https://www.instagram.com/developer/authentication/">Authenticate</a></h3>
+                 <p>Ask users to <a href="https://www.instagram.com/developer/authentication/">authenticate</a> and <a href="https://www.instagram.com/developer/authorization/">authorize your application</a> with Instagram.</p>
+             </li>
+             <li class="step-3">
+                 <h3><a href="https://www.instagram.com/developer/endpoints/">Start making requests!</a></h3>
+                 <p>Make requests to our <a href="https://www.instagram.com/developer/endpoints/">API Endpoints</a> with the users' OAuth credentials.</p>
+              </li>
+          </ol>
+    </section>
+
+    <section class="terms">
+        <h2>Platform Policy</h2>
+
+        <p>Before you start using the API Platform, we have a few guidelines that we'd like to tell you about. Please make sure to read the full <a href="https://www.instagram.com/about/legal/terms/api/">Platform Policy.</a> Here's what you'll read about:</p>
+
+        <ol>
+            <li>Instagram users own their media. It's your responsibility to make sure that you respect that right.</li>
+            <li>You cannot use "insta", "gram" or "Instagram" in your company or product name.</li>
+            <li>You cannot replicate the core user experience of the Instagram apps or web site. For example, do not build a media viewer.</li>
+            <li>You cannot use the API Platform to crawl or store users' media without their express consent.</li>
+            <li>Do not abuse the API Platform, automate requests, or encourage unauthentic behavior. This will get your access turned off.</li>
+        </ol>
+    </section>
+
+
+            </section>
+        </div> <!-- .main -->
+    </div> <!-- .main -->
+
+
+                    </div> <!-- .page -->
+
+
+                    <footer class="page-footer -cx-PRIVATE-Footer__root" role="contentinfo">
+                        <div class="wrapper -cx-PRIVATE-Footer__wrapper">
+                            <nav class="-cx-PRIVATE-Footer__nav">
+                                <ul class="-cx-PRIVATE-Footer__navItems">
+                                    <li><a href="https://www.instagram.com/about/us/">Información</a></li>
+                                    <li><a href="http://help.instagram.com/">Asistencia</a></li>
+                                    <li><a href="http://blog.instagram.com/">Blog</a></li>
+                                    <li><a href="https://instagram-press.com/">Prensa</a></li>
+                                    <li><a href="https://www.instagram.com/developer/">API</a></li>
+                                    <li><a href="https://www.instagram.com/about/jobs/">Empleo</a></li>
+                                    <li><a href="https://www.instagram.com/legal/privacy/">Privacidad</a></li>
+                                    <li><a href="https://www.instagram.com/legal/terms/">
+
+                                          Condiciones
+
+                                    </a></li>
+                                </ul>
+                            </nav>
+
+                            <p class="copyright -cx-PRIVATE-Footer__copyright">© 2018 Instagram</p>
+                        </div>
+                    </footer>
+
+
+                <div id="reactModalMountPoint"></div>
+            </div> <!-- .root -->
+
+
+
+
+            <script type="text/javascript">window._sharedData = {"activity_counts":null,"config":{"csrf_token":"Ot59Qbu8Pcvx52urNGDYWPOYeahQUaF4","viewer":null},"country_code":"ES","language_code":"es","locale":"es_ES","entry_data":{},"gatekeepers":{"ld":true,"seo":true,"seoht":true},"qe":{"client_gql":{"g":"","p":{}},"es6":{"g":"","p":{}},"dash_for_vod":{"g":"","p":{}},"bc3l":{"g":"","p":{}},"aysf":{"g":"","p":{}},"notif":{"g":"","p":{}},"follow_button":{"g":"","p":{}},"loggedout":{"g":"launch","p":{"new_cta":"true","remove_upsell_banner":"true","update_nav":"true"}},"loggedout_upsell":{"g":"","p":{}},"stories":{"g":"","p":{}},"exit_story_creation":{"g":"","p":{}},"su_universe":{"g":"","p":{}},"us_li":{"g":"","p":{}},"sidecar":{"g":"","p":{}},"video":{"g":"","p":{}},"appsell":{"g":"","p":{}},"collections":{"g":"","p":{}},"msisdn":{"g":"","p":{}},"save":{"g":"","p":{}},"stale":{"g":"","p":{}},"reg":{"g":"test_inline_2_01_16","p":{"has_inline_labels":"true"}},"reg_vp":{"g":"control_group_2","p":{"hide_value_prop":"false"}},"prof_pic_upsell":{"g":"","p":{}},"prof_pic_creation":{"g":"","p":{}},"profile_photo_nux_fbc_v2":{"g":"","p":{}},"onetaplogin":{"g":"control","p":{"enabled":"false"}},"onetaplogin_userbased":{"g":"","p":{}},"feed_vp":{"g":"","p":{}},"push_notifications":{"g":"","p":{}},"login_poe":{"g":"","p":{}},"report_haf":{"g":"","p":{}},"report_media":{"g":"","p":{}},"report_profile":{"g":"","p":{}},"reporting":{"g":"","p":{}},"media_reporting":{"g":"","p":{}},"comment_reporting":{"g":"","p":{}},"direct_reporting":{"g":"","p":{}},"bg_sync":{"g":"","p":{}},"disc_ppl":{"g":"","p":{}},"ebdsim_li":{"g":"","p":{}},"ebdsim_lo":{"g":"","p":{}},"embeds":{"g":"","p":{}},"prvcy_tggl":{"g":"","p":{}},"tp_pblshr":{"g":"","p":{}},"fs":{"g":"","p":{}},"404_as_react":{"g":"","p":{}},"acc_recovery":{"g":"","p":{}},"connections":{"g":"","p":{}},"comment_ta":{"g":"","p":{}},"private_lo":{"g":"","p":{}},"gdpr_logged_out":{"g":"","p":{}},"drct_nav":{"g":"","p":{}},"stories_lo":{"g":"","p":{}},"pl_pivot_li":{"g":"","p":{}},"pl_pivot_lo":{"g":"","p":{}},"acc_recovery_link":{"g":"","p":{}}},"hostname":"www.instagram.com","display_properties_server_guess":{"pixel_ratio":1.0,"viewport_width":1366,"viewport_height":662,"orientation":"landscape-primary"},"environment_switcher_visible_server_guess":true,"platform":"web","nonce":"oVxZhPfI6tWbUhKjz5JNNA==","is_bot":false,"zero_data":{},"rollout_hash":"96908ffd6eb0","bundle_variant":"base","probably_has_app":false,"show_app_install":true};</script>
+
+            <script type="text/javascript" src="./index_files/33ac5d9d0e02.js.descarga" crossorigin="anonymous"></script>
+<script type="text/javascript">!function(e){var a=window.webpackJsonp;window.webpackJsonp=function(n,r,i){for(var c,d,f,s=0,g=[];s<n.length;s++)d=n[s],t[d]&&g.push(t[d][0]),t[d]=0;for(c in r)Object.prototype.hasOwnProperty.call(r,c)&&(e[c]=r[c]);for(a&&a(n,r,i);g.length;)g.shift()();if(i)for(s=0;s<i.length;s++)f=o(o.s=i[s]);return f};var n={},t={54:0};function o(a){if(n[a])return n[a].exports;var t=n[a]={i:a,l:!1,exports:{}};return e[a].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.e=function(e){var a=t[e];if(0===a)return new Promise(function(e){e()});if(a)return a[2];var n=new Promise(function(n,o){a=t[e]=[n,o]});a[2]=n;var r=document.getElementsByTagName("head")[0],i=document.createElement("script");i.type="text/javascript",i.charset="utf-8",i.async=!0,i.timeout=12e4,i.crossOrigin="anonymous",o.nc&&i.setAttribute("nonce",o.nc),i.src=o.p+""+({0:"SettingsModules",1:"ProfilePageContainer",2:"LikedByListContainer",3:"FollowListContainer",4:"CreationModules",5:"LocationPageContainer",6:"DiscoverMediaPageContainer",7:"DiscoverEmbedsPageContainer",8:"UserCollectionMediaPageContainer",9:"TagPageContainer",10:"DebugInfoNub",11:"FeedPageContainer",12:"PostPageContainer",13:"LandingPage",14:"LoginAndSignupPage",15:"ResetPasswordPageContainer",16:"MobileStoriesPage",17:"DesktopStoriesPage",18:"UserCollectionsPageContainer",19:"DiscoverPeoplePageContainer",20:"MultiStepSignupPage",21:"DataDownloadRequestPage",22:"ContactHistoryPage",23:"LocationsDirectoryLandingPage",24:"LocationsDirectoryCountryPage",25:"LocationsDirectoryCityPage",26:"DataDownloadRequestConfirmPage",27:"EmailConfirmationPage",28:"SuggestedDirectoryLandingPage",29:"ProfilesDirectoryLandingPage",30:"HashtagsDirectoryLandingPage",31:"DirectoryPage",32:"HttpErrorPage",33:"ActivityFeedPage",34:"StoryCreationPage",35:"FBSignupPage",36:"NewUserInterstitial",37:"ParentalConsentPage",38:"CheckpointUnderageAppealPage",39:"ContactInvitesOptOutPage",40:"ContactInvitesOptOutStatusPage",41:"Report",42:"Copyright",43:"SupportInfo",44:"Community",45:"GenericSurvey",46:"Challenge",47:"Consumer",48:"EmailSnoozePage",49:"EmailUnsubscribePage",50:"ConfirmFollowDialog",51:"NotificationLandingPage"}[e]||e)+".js/"+{0:"c31a7d7ad8d4",1:"ca0c7933912b",2:"3e8983e33915",3:"63ba5cdf9e1d",4:"2b25dabf0f89",5:"14c20201e8e7",6:"9d2e92ba5a35",7:"1f546a738b80",8:"858a4c70db95",9:"9ded097cf88c",10:"0abac3fb0230",11:"b298551c412a",12:"b91c2ed64f78",13:"6c7faad4dd6c",14:"1c0fb00a07ae",15:"adacf15907e4",16:"f86dd2bb81b2",17:"a09cb52eef40",18:"0779a08240d6",19:"27388389251c",20:"dee4b04c2b2f",21:"0090d6f73b0b",22:"31291f2c5de0",23:"d5bfb8ff1712",24:"4a07f4b9e00e",25:"4eb3408033e7",26:"58dcdb28ca4b",27:"6b0dad45a9ba",28:"59214bad8119",29:"dad5c5122788",30:"cf77cfeed08c",31:"0b01dc49579a",32:"a7c6a9a9e232",33:"92c435f7ed71",34:"6e281bf1e9a3",35:"4e0639264132",36:"3eac5b570dd8",37:"68443cae94d8",38:"90f00239005a",39:"444aff8f53d3",40:"2a56a2538192",41:"76d44219a986",42:"73e04ef8cc20",43:"a28bd5148f03",44:"d0b4b0417eb5",45:"991315db9a47",46:"0d708723de3c",47:"382a1afffa26",48:"e34d5aea82d9",49:"021d4778e2c7",50:"5ad80981c0ff",51:"3534ef025844"}[e]+".js";var c=setTimeout(d,12e4);function d(){i.onerror=i.onload=null,clearTimeout(c);var a=t[e];0!==a&&(a&&a[1](new Error("Loading chunk "+e+" failed.")),t[e]=void 0)}return i.onerror=i.onload=d,r.appendChild(i),n},o.m=e,o.c=n,o.d=function(e,a,n){o.o(e,a)||Object.defineProperty(e,a,{configurable:!1,enumerable:!0,get:n})},o.n=function(e){var a=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(a,"a",a),a},o.o=function(e,a){return Object.prototype.hasOwnProperty.call(e,a)},o.p="/static/bundles/base/",o.oe=function(e){throw console.error(e),e}}([]);</script>
+            <script type="text/javascript" src="./index_files/5abc24577217.js.descarga" crossorigin="anonymous"></script>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1425767024389221');
+
+fbq('track', 'PageView');
+
+
+</script>
+<noscript>
+
+
+</noscript>
+
+
+
+</body></html>
